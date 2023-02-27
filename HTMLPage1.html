@@ -1,0 +1,410 @@
+﻿
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mongolian Apex Series</title>
+    <meta name='description' content='ApexLegendsで日韓蒙スクリムの運営を行っているANCの参加チームの一覧です。'>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ApexLegendsANC">
+    <meta property="og:title" content="参加チーム一覧 | ANC (APAC North Custom)">
+    <meta property="og:description" content="ApexLegendsで日韓蒙スクリムの運営を行っているANCの参加チームの一覧です。">
+    <meta property="og:url" content="https://apexanc.net/ParticipatingTeams">
+    <meta property='og:image' content='https://apexanc.net/img/anc_logo.png'>
+    <link rel="stylesheet" href="https://apexanc.net/gridjs/gridjs.css">
+    <link rel="stylesheet" href="https://apexanc.net/css/style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        main {
+            margin-top: 15px;
+        }
+        .rate_exp_table__wrap {
+
+        }
+        .rate_exp_table {
+            display: flex;
+            gap: 0px 10px;
+        }
+        .rate_exp_table__label {
+            display: block;
+            background-color: #fff;
+            border: 1px solid #d2d6dc;
+            border-radius: 5px;
+            font-size: 14px;
+            line-height: 1.45;
+            outline: none;
+            padding: 10px 13px;
+            width: 250px;
+            box-sizing: border-box;
+            margin-left: 3px;
+        }
+        .rate_exp_table__title {
+            color: #fff;
+            font-size: 18px;
+            padding-left: 10px;
+        }
+        .rate_exp_table__table {
+        }
+        .rate_exp_table__wrap input {
+            display: none;
+        }
+        .rate_exp_table__wrap .rate_exp_table {
+            height: 0;
+            padding: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: 0.8s;
+        }
+        .rate_exp_table__wrap input:checked ~ .rate_exp_table {
+            padding: 10px 0;
+            height: auto;
+            opacity: 1;
+        }
+        .gridjs-container {
+            box-sizing: border-box;
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8H33JTFM7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-J8H33JTFM7');
+    </script>
+</head>
+<body>
+    <header class="header">
+    <a class="header_logo">
+        <img class="header_logo_img" src="https://static.wikia.nocookie.net/apexlegends_gamepedia_en/images/4/43/Ranked_Tier7_Apex_Predator.png/revision/latest/scale-to-width-down/120?cb=20190902181417" alt="">
+    </a>
+</header>
+    <main>
+        <div class="rate_exp_table__wrap">
+            <label for="label__rate_exp_table" class="rate_exp_table__label">онооны систем</label>
+            <input type="checkbox" id="label__rate_exp_table"/>
+            <div class="rate_exp_table">
+                <div class="rate_exp_table__changeRate">
+                    <div class="rate_exp_table__title">Point System</div>
+                    <div class="rate_exp_table__table" id="rate_exp_table__table_changeRate"></div>
+                </div>
+                <div class="rate_exp_table__evaluationList">
+                    <div class="rate_exp_table__title">Rating System</div>
+                    <div class="rate_exp_table__table" id="rate_exp_table__table_evaluationList"></div>
+
+                </div>
+            </div>
+        </div>
+        <div id="wrapper"></div>
+    </main>
+    <script src="https://apexanc.net/gridjs/gridjs.js"></script>
+    <script>
+        new gridjs.Grid(
+            {
+                search: false,
+                style: {
+                    th: {
+                        "padding": "10px 20px"
+                    },
+                    td: {
+                        "padding": "5px 20px",
+                        "text-align": "center"
+                    }
+                },
+                data: [
+                    ['1', '12'],
+                    ['2', '9'],
+                    ['3', '7'],
+                    ['4', '5'],
+                    ['5', '4'],
+                    ['6', '2'],
+                    ['7', '2'],
+                    ['8', '2'],
+                    ['9', '2'],
+                    ['10', '2'],
+                    ['11', '1'],
+                    ['12', '1'],
+                    ['13', '1'],
+                    ['14', '1'],
+                    ['15', '1'],
+                    ['16', '0'],
+                    ['17', '0'],
+                    ['18', '0'],
+                    ['19', '0'],
+                    ['20', '0']
+                ],
+                columns: [
+                    {
+                        name: "Эзэлсэн байр",
+                        width: "10%"
+                    }, {
+                        name: "Оноо",
+                        width: "10%"
+                    }
+                ]
+            }
+        ).render(document.getElementById("rate_exp_table__table_changeRate"));
+
+        new gridjs.Grid(
+            {
+                search: false,
+                style: {
+                    th: {
+                        "padding": "10px 20px"
+                    },
+                    td: {
+                        "padding": "5px 20px",
+                        "text-align": "center"
+                    }
+                },
+                data: [
+                    ['1', '15'],
+                    ['2', '12'],
+                    ['3', '9'],
+                    ['4', '9'],
+                    ['5', '9'],
+                    ['6', '5'],
+                    ['7', '5'],
+                    ['8', '5'],
+                    ['9', '5'],
+                    ['10', '5'],
+                    ['11', '0'],
+                    ['12', '0'],
+                    ['13', '0'],
+                    ['14', '0'],
+                    ['15', '0'],
+                    ['16', '0'],
+                    ['17', '0'],
+                    ['18', '0'],
+                    ['19', '0'],
+                    ['20', '0'],
+                ],
+                columns: [
+                    {
+                        name: "レート値",
+                        width: "20%"
+                    }, {
+                        name: "評価",
+                        width: "20%"
+                    }
+                ]
+            }
+        ).render(document.getElementById("rate_exp_table__table_evaluationList"));
+
+        new gridjs.Grid(
+            {
+                autoWidth: false,
+                width: '100%',
+                sort: true,
+                search: {
+                    
+                    selector: (cell, rowIndex, cellIndex) => cell.replace(/\u00A0/g, " ")
+                },
+                language: {
+                    'search': {
+                        'placeholder': '🔍 Хайх'
+                    },
+                },
+                style: {
+                    td: {
+                        "word-break": "break-all"
+                    }
+                },
+                data: [
+                                                                        [
+                                
+                                                                    '321',
+                                                                    '321',
+                                                                    'Mongolia',
+                                                                    'Rokit_Rolla',
+                                                                    'Swifty',
+                                                                    'R3SOL',
+                                                                    '',
+                                                                    '',
+                                                                    '9',
+                                                                    '200',
+                                                            ],
+                                                                                                [
+                                
+                                                                    'DDOS',
+                                                                    'DDOS',
+                                                                    'Mongolia',
+                                                                    'gabi',
+                                                                    'inmuda',
+                                                                    '',
+                                                                    '',
+                                                                    '',
+                                                                    '12',
+                                                                    '208',
+                                                            ],
+                                                                                                [
+                                
+                                                                    'Tyrone',
+                                                                    '',
+                                                                    'Mongolia',
+                                                                    'tyrone',
+                                                                    'subversion',
+                                                                    'rhythm',
+                                                                    '',
+                                                                    '',
+                                                                    '9',
+                                                                    '190',
+                                                            ],
+                                                                                                [
+                                
+                                                                    'Hellbound Assassins',
+                                                                    '',
+                                                                    'Mongolia',
+                                                                    'Hell Yasanchyahav',
+                                                                    'HELL Kodokan',
+                                                                    'HELL sunexartival',
+                                                                    '',
+                                                                    '',
+                                                                    '9',
+                                                                    '140',
+                                                            ],
+                                                                                                [
+                                
+                                                                    'RTC',
+                                                                    'RTC',
+                                                                    'Mongolia',
+                                                                    'Epyka_1st',
+                                                                    'Vanitas',                                                                    
+                                                                    '',
+                                                                    '',
+                                                                    '',
+                                                                    '5',
+                                                                    '104',
+                                                            ],
+                                                                                                [
+                                
+                                                                    'Maruujin',
+                                                                    '',
+                                                                    'Mongolia',
+                                                                    'Koro',
+                                                                    'uvs utgun',
+                                                                    'zekil',
+                                                                    '',
+                                                                    '',
+                                                                    '5',
+                                                                    '109',
+                                                            ],
+                                                                                                [
+                                
+                                                                    'Raging Rebels',
+                                                                    '',
+                                                                    'Mongolia',
+                                                                    'Last Spartan',
+                                                                    'Overjoy',
+                                                                    'notyourtypicalstepbro',
+                                                                    '',
+                                                                    '',
+                                                                    '5',
+                                                                    '70',
+                                                            ],
+                                                                                                [
+                                
+                                                                    'Yatu',
+                                                                    'Yatu',
+                                                                    'Mongolia',
+                                                                    'imstuck',
+                                                                    'imstuck help',
+                                                                    'imstuck diamond 4',
+                                                                    '',
+                                                                    '',
+                                                                    '0',
+                                                                    '38',
+                                                            ],
+                                                                                                
+                                                            ],
+                columns: [
+                    {
+                        name: "TeamName",
+                        width: "20%",
+                        sort: {
+                            enabled: false
+                        }
+                    }, { 
+                        name: "Teamtag",
+                        width: "7%",
+                        sort: {
+                            enabled: false
+                        }
+                    }, { 
+                        name: "Country",
+                        width: "10%",
+                        sort: {
+                            enabled: false
+                        }
+                    }, { 
+                        name: "Player1",
+                        width: "10%",
+                        sort: {
+                            enabled: false
+                        }
+                    }, { 
+                        name: "Player2",
+                        width: "10%",
+                        sort: {
+                            enabled: false
+                        }
+                    }, { 
+                        name: "Player3",
+                        width: "10%",
+                        sort: {
+                            enabled: false
+                        }
+                    }, { 
+                        name: "Player4",
+                        width: "10%",
+                        sort: {
+                            enabled: false
+                        }
+                    }, { 
+                        name: "Player5",
+                        width: "10%",
+                        sort: {
+                            enabled: false
+                        }
+                    }, { 
+                        name: "Rating",
+                        width: "8%",
+                        sort: {
+                            compare: (a, b) => {
+                                a = Number(a);
+                                b = Number(b);
+                                if (a > b) {
+                                    return 1;
+                                } else if (b > a) {
+                                    return -1;
+                                } else {
+                                    return 0;
+                                }
+                            }
+                        }
+                    }, { 
+                        name: "Total Points",
+                        width: "8%",
+                        sort: {
+                            compare: (a, b) => {
+                                a = Number(a);
+                                b = Number(b);
+                                if (a > b) {
+                                    return 1;
+                                } else if (b > a) {
+                                    return -1;
+                                } else {
+                                    return 0;
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ).render(document.getElementById("wrapper"));
+    </script>
+    <footer class="footer">&copy; 2021-2023 APAC North Custom.</footer></body>
+</html>
